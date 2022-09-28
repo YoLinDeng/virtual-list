@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { reactive } from 'vue'
+import { reactive, ref, onMounted, getCurrentInstance } from 'vue'
 import VList from '@/components/VList.vue'
 
 interface listItem {

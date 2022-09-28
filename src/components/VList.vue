@@ -35,7 +35,7 @@ const scrollListBox = () => {
 {{startIndex}}
 {{endIndex}}
   <div class="viewport" @scroll="scrollListBox" ref="viewport">
-    <div class="v-list" :style="{ height: phantomHeight + 'px', paddingTop: startOffset + 'px'}">
+    <div class="v-list" :style="{ height: phantomHeight + 'px', transform: `translateY(${startOffset}px)`}">
       <div class="v-list-item" v-for="item in filterData" :key="item.num">
         {{item.num}}
       </div>
